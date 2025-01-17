@@ -5,8 +5,9 @@
 {% block content %}
     <div class="container">
         <form method="post">
+            <h1>Success page</h1>
             {% csrf_token %}
-    <h1>Do you want to delete <span style="color:red">{{obj.name}}</span> record</h1>
+             <h1>Do you want to delete <span style="color:red">{{obj.name}}</span> record</h1>
             <input type="submit" value="Yes" class="btn btn-success">
             <a href="/a1/sv/"><button type="button" class="btn btn-warning">No</button></a>
 
